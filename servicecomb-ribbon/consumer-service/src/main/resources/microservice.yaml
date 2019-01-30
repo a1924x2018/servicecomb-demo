@@ -1,0 +1,10 @@
+APPLICATION_ID: loadbalanceApplication  # 应用名，注意与网关服务器的应用名保持一致
+service_description:
+  name: consumer-service  # 微服务名
+  version: 0.0.1      # 微服务版本号
+servicecomb:
+  service:
+    registry:
+      address: http://127.0.0.1:30100  # 服务注册中心（重要）
+  rest:
+      address: 0.0.0.0:7777   # 微服务启动端口
